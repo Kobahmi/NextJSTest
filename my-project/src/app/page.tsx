@@ -24,6 +24,7 @@ export default function Home() {
       Image from imgur with max-width
       <Image
         src='https://i.imgur.com/CZPB3YN.jpg'
+        className='max-w-xl'
         alt='External Image Example'
         layout='responsive'
         width={100}
