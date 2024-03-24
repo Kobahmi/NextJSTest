@@ -21,6 +21,14 @@ export default function Home() {
         width={100}
         height={24}
       />
+      Image from imgur with max-width
+      <Image
+        src='https://i.imgur.com/CZPB3YN.jpg'
+        alt='External Image Example'
+        layout='responsive'
+        width={100}
+        height={24}
+      />
     </main>
   );
 }
