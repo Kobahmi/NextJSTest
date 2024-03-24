@@ -2,8 +2,25 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className='flex flex-col items-center justify-between min-h-screen p-24 text-4xl font-black text-red-400'>
-      ALLO
+    <main className='flex flex-col items-center min-h-screen gap-4 p-24 text-4xl font-black text-red-400'>
+      Layout responsive
+      <Image
+        src='/cat.jpeg'
+        alt='cat sharp'
+        className='invert'
+        layout='responsive'
+        width={100}
+        height={24}
+      />
+      Layout fixed
+      <Image
+        src='/cat.jpeg'
+        className='w-full invert'
+        alt='cat blurry'
+        layout='fixed'
+        width={100}
+        height={24}
+      />
     </main>
   );
 }
